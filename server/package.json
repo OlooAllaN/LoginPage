@@ -17,7 +17,15 @@
   },
   "homepage": "https://github.com/OlooAllaN/LoginPage#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
+    "mdbootstrap": "^4.5.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }

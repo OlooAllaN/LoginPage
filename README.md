@@ -1,2 +1,3 @@
 # LoginPage
-Login page using MERN Stack technology
+Login page using express handlebars
+

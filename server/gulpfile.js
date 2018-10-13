@@ -19,11 +19,17 @@ gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 
         'node_modules/mdbootstrap/js/mdb.min.js',
         'node_modules/tether/dist/js/tether.min.js',
-        'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest("../client/public/js"))
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/requirejs/require.js'])
+        .pipe(gulp.dest("../client/public/js/libs"))
         .pipe(browserSync.stream());
 });
 
+// Fonts
+gulp.task('fonts', function() {
+  return gulp.src(['node_modules/mdbootstrap/font/roboto/Roboto-Light.woff2'])
+          .pipe(gulp.dest('../client/public/css/mdbootstrap'));
+});
 
 gulp.task('nodemon', function (cb) {
     var called = false;
@@ -62,4 +68,4 @@ gulp.task('nodemon', function (cb) {
   gulp.watch('client/**/*.hbs').on('change', browserSync.reload);
 });
 
- gulp.task('default', ['js', 'browser-sync']);
+ gulp.task('default', ['js', 'browser-sync', 'fonts']);

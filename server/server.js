@@ -18,10 +18,10 @@ app.set('views', path.resolve(__dirname, '../client/views'));
 app.set('view engine', '.hbs');
 
 //Scripts associated with index.html
-var scripts = [{ script:  path.resolve(__dirname, '../client/public/index.js') }];
+var scripts = [{ script:  path.resolve(__dirname, '../client/public/main.js') }];
 
 app.get('/', (req, res) => {
-  res.render('index', {title: 'Home', script: 'js/index.js'});
+  res.render('index', {title: 'Home'});
 });
 
 app.listen(3000, () => {

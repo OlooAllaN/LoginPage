@@ -21,7 +21,7 @@ app.set('view engine', '.hbs');
 var scripts = [{ script:  path.resolve(__dirname, '../client/public/main.js') }];
 
 app.get('/', (req, res) => {
-  res.render('index', {title: 'Home'});
+  res.render('body', {title: 'Home'});
 });
 
 app.listen(3000, () => {

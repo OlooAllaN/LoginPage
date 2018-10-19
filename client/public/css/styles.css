@@ -1,15 +1,40 @@
+/* The navigation bar */
+.navbar {
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 7%
+}
+  
+.navbar-brand {
+  font-size: 1.9em;
+}
 
+  .jumbotron {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    z-index: -1;
+    background-size: 100% 100%;
+    padding-top: 10%;
+   padding-bottom: 10%;
+   margin-bottom: inherit;
+}
+
+.carousel {
+  height: 80vh;
+  width: 100%;
+  overflow:hidden;
+}
+
+/* 
   ul {
     font-size: 1.5em;
   }
   
+  
   .jumbotron {
-    min-height: 100vh;
-    background: linear-gradient(top left, #50a3a2 10%, transparent 20%);
-    background: radial-gradient(circle at bottom, #39d24a 0%, transparent 80%);
-    background: linear-gradient(to top, dodgerblue 10%, transparent 70%);
-    animation: bg 20s infinite;
-    background-size: cover;
+      padding-top: 20%;
+      padding-bottom: 20%;
   }
   
   .btn {
@@ -325,4 +350,4 @@
       }
     }
   }
-  
+   */

@@ -1,8 +1,4 @@
-require(['tether'], function (Tether) {
-    window.Tether = Tether;
-});
-define(['jquery','tether', 'bootstrap'], function($) {
-    $('[data-toggle="tooltip"]').tooltip()
+define(['jquery', 'bootstrap'], function($, bootstrap) {
     $(document ).ready(function() {
         $(".custom-class .text-center").on("click", function() {
             $("#modalLoginAvatar").modal("show");

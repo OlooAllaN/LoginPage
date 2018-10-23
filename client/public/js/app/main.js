@@ -12,6 +12,9 @@ define(['jquery', 'bootstrap'], function($, bootstrap) {
           });
           $(document).on('hide.bs.collapse', function() {
               $(".custom-class").find(".row").removeClass("slide-up");
-          });//$('.collapse').collapse()
+          });
+          $('.carousel').carousel({
+            interval: 2000
+          })
         });
 });

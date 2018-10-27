@@ -14,7 +14,7 @@ define(['jquery', 'bootstrap'], function($, bootstrap) {
               $(".custom-class").find(".row").removeClass("slide-up");
           });
           $('.carousel').carousel({
-            interval: 2000
+            interval: 3000
           })
         });
 });
